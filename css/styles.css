@@ -89,7 +89,6 @@ body {
     border-radius: 0.4rem;
     color: var(--cor-white);
   }
-  
   .header-menu a:hover {
     display: none;
   }
@@ -118,7 +117,6 @@ body {
 .main-bg {
   width: 100%;
   height: 58rem;
- 
   background-color: var(--background);
 }
 
@@ -179,7 +177,6 @@ body {
   transition: 0.3s;
   animation: entering 3s ease-in-out ;
 }
-
 
 .main-img:hover {
   scale: 1.1;
@@ -361,6 +358,12 @@ body {
     width: 200px;
   }
 }
+@media (max-width: 656px) {
+  .section-content-img {
+    margin-top: 4rem;
+    width: 135px;
+  }
+}
 @media (max-width: 425px) {
   .section-content h2 {
     font-size: 4rem;
@@ -372,6 +375,79 @@ body {
   }
   .section-content-img {
     margin-top: 3rem;
-    width: 160px;
+    width: 135px;
+   
+  }
+}
+
+/*Section-bolos-aniversario*/
+.grid {
+  margin-bottom: 4rem;
+}
+.grid h2 {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--cor-font-primary);
+  font-family: 'Great Vibes', cursive;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.grid h2::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: var(--cor-primary);
+  top: 8rem;
+  margin-left: 144px;
+  position: absolute;
+}
+
+.image-grid {
+  --gap:4rem;
+  --num-cols:4;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows:var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.image-grid > img:hover {
+  transform: scale(1.1);
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height:200px;
+  }
+}
+@media (max-width: 425px) {
+  .grid h2 {
+    font-size: 5rem;
+    margin-top: -50px;
+    margin-bottom: 0.1rem;
+  }
+  .grid h2::before {
+    display: none;
   }
 }
