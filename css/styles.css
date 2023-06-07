@@ -280,11 +280,11 @@ body {
   width: 96rem;
   height: 47rem;
   margin: auto;
-  margin-top: -80px;
+  margin-top: -8rem;
   margin-bottom: 10rem;
   background-color: var(--cor-secundary);
-  box-shadow: var(--cor-secundary) 0px 0.1px 4px;
-  border-radius: 4px;
+  box-shadow: var(--cor-secundary) 0px 0.1rem 0.4rem;
+  border-radius: 0.4rem;
 }
 
 .section-content h2 {
@@ -299,11 +299,11 @@ body {
 
 .section-content h2::before {
   content: "";
-  width: 100px;
-  height: 4px;
+  width: 10rem;
+  height:0.4rem;
   background-color: var(--cor-background);
-  top: 120px;
-  margin-left: 106px;
+  top: 12rem;
+  margin-left: 10rem;
   position: absolute;
 }
 
@@ -464,8 +464,6 @@ body {
   gap: 2rem;
 }
 
-
-
 .section-clientes-bg h2 {
   text-align: center;
   font-family: 'Great Vibes', cursive;
@@ -478,11 +476,11 @@ body {
 
 .section-clientes-bg h2::before {
   content: "";
-  width: 100px;
-  height: 4px;
+  width: 10rem;
+  height: 0.4rem;
   background-color: var(--cor-primary);
-  top: 120px;
-  margin-left: 106px;
+  top: 12rem;
+  margin-left: 10rem;
   position: absolute;
 }
 
@@ -509,6 +507,42 @@ body {
 
 .section-clientes img:hover {
   transform: scale(1.1);
-  
+}
+
+/*Media query Section-Clientes*/
+@media (max-width:768px) {
+  .section-clientes {
+    margin-top: -2rem;
+  }
+  .section-clientes-bg h2 {
+    font-size: 5rem;
+  }
+  .section-clientes-bg p {
+    font-size: 1rem;
+  }
+  .section-clientes-bg h2::before {
+    display: none;
+
+  }
+  .section-clientes-card {
+    margin-top: -4rem;
+  }
+}
+@media (max-width:425px) {
+  .section-clientes {
+    margin-top: -1rem;
+  }
+  .section-clientes-bg h2 {
+    font-size: 4rem;
+    padding-top: -2rem;
+  }
+  .section-clientes-bg p {
+    font-size: 1rem;
+    margin: 4px;
+  }
+  .section-clientes-bg h2::before {
+    display: none;
+
+  }
   
 }
