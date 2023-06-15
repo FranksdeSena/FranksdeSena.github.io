@@ -636,6 +636,31 @@ strong {
   transform: scale(1.1);
 }
 
+/*Media query Section-Clientes*/
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-endereco:nth-child(2), .footer-endereco:nth-child(3) {
+    border: none;
+  }
+  .footer-redesocial {
+    margin-left: -10.2rem;
+  }
+  .footer-endereco:nth-child(2) h3 {
+    margin-top: -4rem;
+    margin-left: -10.3rem;
+  }
+  .footer-endereco:nth-child(3) h3 {
+    margin-top: -4rem;
+    
+  }
+  .copyright-social {
+    display: flex;
+    margin-left: 39rem;
+  }
+}
+
 
 
 
