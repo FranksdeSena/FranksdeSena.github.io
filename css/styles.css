@@ -548,6 +548,7 @@ body {
 /*Footer*/
 .footer-bg {
   background-color: var(--background);
+ max-width: 100%;
 }
 
 .footer-container {
@@ -659,6 +660,29 @@ strong {
     display: flex;
     margin-left: 39rem;
   }
+}
+@media (max-width: 400px) {
+  .footer-endereco:nth-child(3) h3 {
+    margin-left: -2rem;
+  }
+  .footer-endereco ul  p{
+    margin-left: -1.9rem;
+  }
+  .footer-endereco ul strong {
+    margin-left: 1.9rem;
+  }
+  .footer-redesocial {
+    margin-left: -11.2rem;
+  }
+  .footer-endereco:nth-child(2) h3 {
+    margin-top: -4rem;
+    margin-left: -11rem;
+  }
+  .copyright-social {
+   margin-left: 44rem;
+  }
+  
+  
 }
 
 
